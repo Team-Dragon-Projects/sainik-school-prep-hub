@@ -18,7 +18,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <div className="w-12 h-10">
               <img
                 src="/lovable-uploads/525ad2db-40d9-4495-8d8b-dd280777336d.png"
@@ -26,7 +26,6 @@ const Navigation = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="font-bold text-lg">Vivekananda Coaching Center</span>
           </div>
 
           {/* Desktop Menu */}
@@ -51,9 +50,6 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection('contact')} className="hover:text-blue-300 transition-colors">
               Contact Us
-            </button>
-            <button className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg font-semibold transition-colors">
-              Apply Now
             </button>
           </div>
 
@@ -91,9 +87,6 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 hover:text-blue-300">
               Contact Us
-            </button>
-            <button className="w-full bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg font-semibold transition-colors">
-              Apply Now
             </button>
           </div>
         )}

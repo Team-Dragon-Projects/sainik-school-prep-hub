@@ -9,17 +9,22 @@ interface HeroSliderProps {
 const HeroSlider = ({ currentSlide, setCurrentSlide }: HeroSliderProps) => {
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3",
+      image: "/lovable-uploads/a6545cb5-93e4-49eb-b89d-bc6c96698ec4.png",
       title: "19 Years of Excellence in Sainik School Coaching",
       subtitle: "Preparing Class 6 & 9 Students for AISSEE Success"
     },
     {
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3",
+      image: "/lovable-uploads/35454136-90ce-4866-b89d-bc6c96698ec4.png",
       title: "Expert Faculty & Proven Results",
       subtitle: "Join 857+ Students Who Successfully Joined Sainik Schools"
     },
     {
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3",
+      image: "/lovable-uploads/72df1778-b4b6-4235-bbd7-ef18a179a6a7.png",
+      title: "State First Rank Holders",
+      subtitle: "Excellence in Every Achievement"
+    },
+    {
+      image: "/lovable-uploads/e23ebe87-69a7-4d76-ac32-4e458910a88e.png",
       title: "Comprehensive Training Program",
       subtitle: "Mock Tests, Interviews & Personalized Attention"
     }
@@ -47,9 +52,6 @@ const HeroSlider = ({ currentSlide, setCurrentSlide }: HeroSliderProps) => {
                 <p className="text-xl md:text-2xl mb-8 animate-fade-in">
                   {slide.subtitle}
                 </p>
-                <button className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg text-lg font-semibold transition-colors animate-scale-in">
-                  Apply Now
-                </button>
               </div>
             </div>
           </div>
@@ -67,13 +69,6 @@ const HeroSlider = ({ currentSlide, setCurrentSlide }: HeroSliderProps) => {
             }`}
           />
         ))}
-      </div>
-
-      {/* Floating Apply Button */}
-      <div className="fixed bottom-6 right-6 z-40">
-        <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full shadow-lg font-semibold transition-all hover:scale-105">
-          Apply Now
-        </button>
       </div>
     </section>
   );

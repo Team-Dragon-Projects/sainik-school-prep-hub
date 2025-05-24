@@ -16,7 +16,7 @@ const Index = () => {
   // Auto-rotate slider every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide(prev => (prev + 1) % 3);
+      setCurrentSlide(prev => (prev + 1) % 4);
     }, 4000);
     return () => clearInterval(interval);
   }, []);

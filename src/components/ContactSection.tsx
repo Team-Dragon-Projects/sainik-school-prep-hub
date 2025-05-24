@@ -47,8 +47,10 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-navy-900 mb-2">Address</h3>
                   <p className="text-gray-600">
-                    123 Education Street, Academic District<br />
-                    Bangalore, Karnataka 560001<br />
+                    15/81, Vivekanandha Coaching Center<br />
+                    Opposite to Forest Office<br />
+                    Amaravathinagar, Udumalpet<br />
+                    Tiruppur - 642102<br />
                     India
                   </p>
                 </div>
@@ -61,8 +63,9 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-navy-900 mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    +91 9876543210<br />
-                    +91 8765432109
+                    +91 9080023226<br />
+                    +91 9443271565<br />
+                    +91 9965698089
                   </p>
                 </div>
               </div>
@@ -74,8 +77,7 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-navy-900 mb-2">Email</h3>
                   <p className="text-gray-600">
-                    info@sainikschoolacademy.com<br />
-                    admissions@sainikschoolacademy.com
+                    amaravianradha@gmail.com
                   </p>
                 </div>
               </div>
@@ -87,17 +89,24 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-navy-900 mb-2">WhatsApp</h3>
                   <p className="text-gray-600">
-                    +91 9876543210
+                    +91 9080023226
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Google Map Placeholder */}
+            {/* Google Map */}
             <div className="mt-8">
-              <div className="w-full h-64 bg-gray-300 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600">Google Map Integration</p>
-              </div>
+              <iframe
+                src="https://maps.app.goo.gl/4Cag7eo2yWTJXr6MA"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              ></iframe>
             </div>
           </div>
 
