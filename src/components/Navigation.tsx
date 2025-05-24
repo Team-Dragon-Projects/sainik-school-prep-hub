@@ -19,7 +19,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-12 h-10">
+            <div className="w-20 h-14">
               <img
                 src="/lovable-uploads/525ad2db-40d9-4495-8d8b-dd280777336d.png"
                 alt="Vivekananda Logo"

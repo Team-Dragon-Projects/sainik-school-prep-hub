@@ -6,7 +6,7 @@ import AboutSection from '../components/AboutSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import FounderSection from '../components/FounderSection';
 import AchievementCounters from '../components/AchievementCounters';
-import RankHolders from '../components/RankHolders';
+import StateRankersSection from '../components/StateRankersSection';
 import Gallery from '../components/Gallery';
 import ContactSection from '../components/ContactSection';
 
@@ -29,7 +29,7 @@ const Index = () => {
       <AboutSection />
       <WhyChooseUs />
       <FounderSection />
-      <RankHolders />
+      <StateRankersSection />
       <Gallery />
       <ContactSection />
     </div>
