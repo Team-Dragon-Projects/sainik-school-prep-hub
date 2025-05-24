@@ -14,6 +14,15 @@ const RankHolders = () => {
   return (
     <section id="rankers" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Banner Image */}
+        <div className="mb-12">
+          <img
+            src="/lovable-uploads/9b49e9d9-5580-4d5a-90cd-302a7844d725.png"
+            alt="AISSEE State First Rank Holders Banner"
+            className="w-full rounded-lg shadow-lg"
+          />
+        </div>
+
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
             AISSEE State First Rank Holders

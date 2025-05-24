@@ -19,10 +19,14 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-              <span className="text-navy-900 font-bold text-xl">SS</span>
+            <div className="w-12 h-10">
+              <img
+                src="/lovable-uploads/525ad2db-40d9-4495-8d8b-dd280777336d.png"
+                alt="Vivekananda Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <span className="font-bold text-lg">Sainik School Academy</span>
+            <span className="font-bold text-lg">Vivekananda Coaching Center</span>
           </div>
 
           {/* Desktop Menu */}
@@ -41,6 +45,9 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection('rankers')} className="hover:text-blue-300 transition-colors">
               State First Rankers
+            </button>
+            <button onClick={() => scrollToSection('gallery')} className="hover:text-blue-300 transition-colors">
+              Gallery
             </button>
             <button onClick={() => scrollToSection('contact')} className="hover:text-blue-300 transition-colors">
               Contact Us
@@ -78,6 +85,9 @@ const Navigation = () => {
             </button>
             <button onClick={() => scrollToSection('rankers')} className="block w-full text-left py-2 hover:text-blue-300">
               State First Rankers
+            </button>
+            <button onClick={() => scrollToSection('gallery')} className="block w-full text-left py-2 hover:text-blue-300">
+              Gallery
             </button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 hover:text-blue-300">
               Contact Us

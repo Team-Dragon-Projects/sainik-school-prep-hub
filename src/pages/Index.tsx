@@ -7,6 +7,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import FounderSection from '../components/FounderSection';
 import AchievementCounters from '../components/AchievementCounters';
 import RankHolders from '../components/RankHolders';
+import Gallery from '../components/Gallery';
 import ContactSection from '../components/ContactSection';
 
 const Index = () => {
@@ -29,6 +30,7 @@ const Index = () => {
       <WhyChooseUs />
       <FounderSection />
       <RankHolders />
+      <Gallery />
       <ContactSection />
     </div>
   );
