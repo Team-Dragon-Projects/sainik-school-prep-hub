@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState, useEffect } from 'react';
+import Navigation from '../components/Navigation';
+import HeroSlider from '../components/HeroSlider';
+import AboutSection from '../components/AboutSection';
+import WhyChooseUs from '../components/WhyChooseUs';
+import FounderSection from '../components/FounderSection';
+import AchievementCounters from '../components/AchievementCounters';
+import RankHolders from '../components/RankHolders';
+import ContactSection from '../components/ContactSection';
 
 const Index = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto-rotate slider every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(prev => (prev + 1) % 3);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navigation />
+      <HeroSlider currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
+      <AchievementCounters />
+      <AboutSection />
+      <WhyChooseUs />
+      <FounderSection />
+      <RankHolders />
+      <ContactSection />
     </div>
   );
 };
