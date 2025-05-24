@@ -9,7 +9,7 @@ interface HeroSliderProps {
 const HeroSlider = ({ currentSlide, setCurrentSlide }: HeroSliderProps) => {
   const slides = [
     {
-      image: "/lovable-uploads/a6545cb5-93e4-49eb-b89d-bc6c96698ec4.png"
+      image: "/lovable-uploads/1bc79683-8df1-4324-89b0-3c94180f7605.png"
     },
     {
       image: "/lovable-uploads/35454136-90ce-4866-b89d-bc6c96698ec4.png"
@@ -23,7 +23,7 @@ const HeroSlider = ({ currentSlide, setCurrentSlide }: HeroSliderProps) => {
   ];
 
   return (
-    <section id="home" className="relative h-screen overflow-hidden">
+    <section id="home" className="relative h-screen overflow-hidden mt-16">
       {slides.map((slide, index) => (
         <div
           key={index}
